@@ -1,0 +1,9 @@
+<div class="main">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        Are you sure you want to delete?
+        {{ todos }}
+        <input type="submit", value="Yes"/>
+    </form>
+</div>

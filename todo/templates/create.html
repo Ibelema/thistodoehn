@@ -1,0 +1,10 @@
+<html>
+    <head>
+        <title>Lets create this baby</title>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit", value="create todo"/>
+        </form>
+    </head>
+</html>

@@ -1,0 +1,11 @@
+<head>
+    <title>MY TODO</title>
+    <body>
+        {% for todo in todos %}
+        <h2>
+            <a href="{% url 'todo:todo_view' %}">todo-view</a>
+        </h2>
+                {{ todo.title }}
+        {% endfor %}
+    </body>
+</head>
