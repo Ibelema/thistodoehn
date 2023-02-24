@@ -1,11 +1,19 @@
 <head>
     <title>MY TODO</title>
+    <style type="text/css">
+        body {
+            font-family: arial;
+            font-size: 12px;
+            background-color: rgb(185,179,175);}
+        h1 {
+            color: rgb(255,255,255);}        
+    </style>
     <body>
         {% for todo in todos %}
         <h2>
             <a href="{% url 'todo:todo_view' %}">todo-view</a>
         </h2>
-                {{ todo.title }}
+
         {% endfor %}
     </body>
 </head>
