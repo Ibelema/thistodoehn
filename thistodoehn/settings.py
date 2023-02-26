@@ -40,7 +40,17 @@ INSTALLED_APPS = [
 
     #the last time
     'todo',
+    'api',
+
+    #3rd party app
+    'rest_framework',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
